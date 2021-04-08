@@ -1,0 +1,55 @@
+h1 {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ff9100;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+}
+
+/* Dica - primeiro estilizar - fonte, cor de fonte, tamanho e depois posicionar os elementos com largura e posição na tela */
+
+article {
+    border: 2px solid #ff9100;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+article section {
+    width: 630px;
+    border: 1px solid #ff9100;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+article section h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    background-color: #ff9100;
+    color: #fff;
+    padding: 0.5rem;
+    margin-top: 0;
+}
+
+article section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p a {
+    display: inline-block;
+    background-color: #df0b0b;
+    color: #fff;
+    padding: 0.30rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
