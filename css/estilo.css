@@ -1,48 +1,59 @@
+:root {
+    --cor-fundo-destaque: #ff9100;
+    --cor-frente-destaque: #fff;
+    --espacamento-padrao: 0.5rem;
+    --font-family-padrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h1 {
-    color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #ff9100;
-    padding: .5rem;
+    color: var(--cor-frente-destaque);
+    font-family: var(--font-family-padrao);
+    background-color: var(--cor-fundo-destaque);
+    padding: var(--espacamento-padrao);
     font-size: 1.5rem;
 }
 
 ul {
     list-style: none;
     padding-left: 1rem;
+    font-size: 1.2rem;
 }
 
 ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--espacamento-padrao);
     padding: 0.25rem;
 }
 
 /* Dica - primeiro estilizar - fonte, cor de fonte, tamanho e depois posicionar os elementos com largura e posição na tela */
 
 article {
-    border: 2px solid #ff9100;
+    border: 2px solid var(--cor-fundo-destaque);
     padding: 1.25rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
+    }
 
 article section {
-    width: 630px;
-    border: 1px solid #ff9100;
+   /*width: 630px;*/
+    width: 85vw; /* vw = largura da tela */
+    border: 1px solid var(--cor-fundo-destaque);
     box-sizing: border-box;
     padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 article section h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-family-padrao);
     font-size: 1.3rem;
-    background-color: #ff9100;
+    background-color: var(--cor-fundo-destaque);
     color: #fff;
     padding: 0.5rem;
     margin-top: 0;
 }
 
 article section p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-family-padrao);
 }
 
 footer p a {
@@ -52,4 +63,16 @@ footer p a {
     padding: 0.30rem;
     border-radius: 5px;
     text-decoration: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    article {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article section {
+        width: 45vw;
+    }
 }
